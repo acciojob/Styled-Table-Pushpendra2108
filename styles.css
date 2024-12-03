@@ -1,1 +1,19 @@
 /* your code */
+ table {
+            border-collapse: collapse; /* Ensures borders are combined */
+            width: 50%; /* Adjusts table width */
+            margin: 20px auto; /* Centers the table */
+            
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 20px;
+        }
+       
+        th, td {
+            border: 1px solid black; /* Adds borders to cells */
+            padding: 10px; /* Adds spacing inside cells */
+            text-align: center; /* Centers text */
+        }
+        th {
+            background-color: #221c90; /* Adds light gray background for headers */
+            color: white;
+        }
