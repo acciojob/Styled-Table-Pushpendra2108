@@ -1,19 +1,38 @@
 /* your code */
- table {
-            border-collapse: collapse; /* Ensures borders are combined */
-            width: 50%; /* Adjusts table width */
-            margin: 20px auto; /* Centers the table */
-            
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            border-radius: 20px;
-        }
-       
-        th, td {
-            border: 1px solid black; /* Adds borders to cells */
-            padding: 10px; /* Adds spacing inside cells */
-            text-align: center; /* Centers text */
-        }
-        th {
-            background-color: #221c90; /* Adds light gray background for headers */
-            color: white;
-        }
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+thead th {
+    background-color: #2c5ba3;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Row Styling */
+tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8e8e8;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Add Hover Effect */
+tbody tr:hover {
+    background-color: #d3e4f5;
+    transition: background-color 0.3s ease;
+}
